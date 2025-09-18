@@ -1,4 +1,4 @@
-package scrypt
+package main
 
 // This package exists so the module root (github.com/exterminatorz/xk6-crypto-sCrypt)
 // can be imported directly by xk6's --with flag. It blank-imports the real
