@@ -1,4 +1,4 @@
-module github.com/exterminatorz/xk6-crypto-sCrypt
+module github.com/exterminatorz/xk6-crypto-scrypt
 
 go 1.24.0
 
