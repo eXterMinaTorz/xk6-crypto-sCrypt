@@ -7,6 +7,12 @@ toolchain go1.24.4
 require go.k6.io/k6 v1.2.3
 
 require (
+	github.com/Masterminds/semver/v3 v3.4.0 // indirect
+	github.com/onsi/ginkgo v1.16.5 // indirect
+	github.com/onsi/gomega v1.38.2 // indirect
+)
+
+require (
 	github.com/cenkalti/backoff/v5 v5.0.2 // indirect
 	github.com/dlclark/regexp2 v1.11.4 // indirect
 	github.com/evanw/esbuild v0.25.8 // indirect
@@ -14,7 +20,7 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.4+incompatible // indirect
-	github.com/google/pprof v0.0.0-20230728192033-2ba5b33183c6 // indirect
+	github.com/google/pprof v0.0.0-20250403155104-27863c87afa6 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grafana/sobek v0.0.0-20250723111835-dd8a13f0d439 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.1 // indirect
