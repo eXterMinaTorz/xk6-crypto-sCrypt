@@ -77,7 +77,7 @@ func (e *Exporter) NewModuleInstance(vu modules.VU) modules.Instance {
 }
 
 func init() {
-	// Register the module so k6 can import it as k6/x/secp256k1
+	// Register the module so k6 can import it as k6/x/scrypt
 	modules.Register("k6/x/scrypt", new(Exporter))
 }
 
