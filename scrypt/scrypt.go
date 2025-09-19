@@ -1,6 +1,7 @@
 package scrypt
 
 import (
+	"crypto/rand"
 	"encoding/base64"
 	"reflect"
 
@@ -51,6 +52,10 @@ func (m *ScryptModule) GenerateHash(input string, opts map[string]interface{}) (
 		}
 	}
 	salt := make([]byte, options.saltLen)
+	_, err := rand.Read(salt)
+	if err != nil {
+		return ScryptResult{}, err
+	}
 	dk, err := scrypt.Key([]byte(input), salt, options.N, options.r, options.p, options.keyLen)
 	if err != nil {
 		return ScryptResult{}, err
